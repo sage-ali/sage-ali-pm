@@ -33,7 +33,7 @@ jobs:
           cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install --dangerously-approve-all-builds
+        run: pnpm install --dangerously-allow-all-builds
 
       - name: Build
         run: pnpm build
