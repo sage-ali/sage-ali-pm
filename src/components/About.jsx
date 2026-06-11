@@ -13,8 +13,12 @@ export default function About() {
 
           {/* Avatar */}
           <FadeIn>
-            <div className="w-full max-w-[320px] aspect-square bg-bg3 rounded-card border border-bdr flex items-center justify-center font-display font-extrabold text-[5rem] text-accent tracking-[-0.05em] transition-[border-color,box-shadow] duration-300 hover:border-[rgba(74,232,154,0.3)] hover:shadow-[0_0_40px_rgba(74,232,154,0.06)]">
-              AA
+            <div className="w-full max-w-[320px] aspect-square rounded-card border border-bdr overflow-hidden transition-[border-color,box-shadow] duration-300 hover:border-[rgba(74,232,154,0.3)] hover:shadow-[0_0_40px_rgba(74,232,154,0.06)]">
+              <img
+                src="https://avatars.githubusercontent.com/u/81039794?s=1000&u=7be425c8651203883f9e462cf06f4e238b04cd84&v=4"
+                alt="Ali Agboola"
+                className="w-full h-full object-cover"
+              />
             </div>
           </FadeIn>
 
@@ -29,24 +33,25 @@ export default function About() {
 
             <FadeIn delay={160}>
               <p className="text-muted mb-5 leading-[1.7]">
-                I am a Product Manager with an engineering mindset. I joined the HNG
-                Internship across <strong className="text-txt font-medium">three simultaneous tracks</strong> —
-                Frontend, Backend, and Product Management — because I believe a PM
-                who can't read a pull request or trace an API call is leaving value
-                on the table.
+                I'm a Product Manager with an engineering mindset. I joined the HNG
+                Internship across <strong className="text-txt font-medium">Frontend, Backend, and Product Management</strong> because
+                I believe strong PMs should understand enough of the technical layer
+                to read a pull request, trace an API call, and spot implementation
+                risk early.
               </p>
               <p className="text-muted mb-5 leading-[1.7]">
-                My edge is <strong className="text-txt font-medium">pre-code validation</strong>: I map data flows,
-                check API constraints, and write SQL before work hits a sprint. That
-                saves engineering hours and gets better features shipped faster. I
-                have worked directly embedded with backend teams, written Technical
-                Requirements Documents, and delivered RICE-scored sprint strategies
-                under real budget constraints.
+                My strength is <strong className="text-txt font-medium">pre-code validation</strong>. I map data flows,
+                check API constraints, and think through the technical shape of a
+                feature before it reaches a sprint. That has helped me reduce rework,
+                support better planning, and ship features with fewer surprises. I've
+                worked closely with backend teams, written Technical Requirements
+                Documents, and shaped RICE-based sprint strategies under real
+                constraints.
               </p>
               <p className="text-muted mb-5 leading-[1.7]">
-                Outside of product, I am genuinely curious about fintech, African
-                market dynamics, and how systems fail — which is why my best work
-                tends to involve finding the gap everyone else walked past.
+                Beyond product, I'm interested in fintech, system failure, and how
+                markets behave in different contexts. I tend to do my best work where
+                product, engineering, and real-world complexity meet.
               </p>
             </FadeIn>
 

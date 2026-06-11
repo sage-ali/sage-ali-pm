@@ -55,9 +55,9 @@ export default function Hero() {
             </h1>
 
             <p className="hero-item text-[1.05rem] text-muted max-w-[480px] mb-8 leading-[1.7]" style={{ animationDelay: '380ms' }}>
-              Technical PM who bridges engineering and strategy. I validate
-              features before a single sprint point is spent — writing SQL,
-              checking APIs, and turning ambiguous goals into buildable roadmaps.
+              Technical PM bridging engineering and strategy. I validate features
+              before development starts — writing SQL, checking APIs, and turning
+              ambiguous goals into buildable roadmaps.
             </p>
 
             <div className="hero-item flex gap-4 flex-wrap" style={{ animationDelay: '520ms' }}>
