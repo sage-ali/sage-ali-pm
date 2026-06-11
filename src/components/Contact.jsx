@@ -23,10 +23,10 @@ const contactLinks = [
     external: true,
   },
   {
-    href: 'https://github.com/ali-agboola',
+    href: 'https://github.com/sage-ali',
     icon: <GitHubIcon />,
     label: 'GitHub',
-    value: 'github.com/ali-agboola',
+    value: 'github.com/sage-ali',
     external: true,
   },
 ]

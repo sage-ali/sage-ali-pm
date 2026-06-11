@@ -41,10 +41,10 @@ export default function Nav() {
   }, [])
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 h-[60px] flex items-center justify-between px-6 md:px-16 bg-[rgba(14,15,17,0.88)] backdrop-blur-[12px] border-b border-white/[0.08]">
+    <nav className="fixed top-0 left-0 right-0 z-50 h-[60px] flex items-center justify-between px-6 md:px-16 bg-[rgba(14,15,17,0.88)] backdrop-blur-md border-b border-white/8">
       {/* Scroll progress bar */}
       <div
-        className="absolute bottom-0 left-0 h-[2px] bg-accent transition-[width] duration-100 ease-out"
+        className="absolute bottom-0 left-0 h-0.5 bg-accent transition-[width] duration-100 ease-out"
         style={{ width: `${scrollProgress}%` }}
       />
 
@@ -81,7 +81,7 @@ export default function Nav() {
 
       {/* Mobile dropdown */}
       {menuOpen && (
-        <div className="absolute top-[60px] left-0 right-0 bg-bg2 border-b border-white/[0.08] md:hidden">
+        <div className="absolute top-[60px] left-0 right-0 bg-bg2 border-b border-white/8 md:hidden">
           <ul className="list-none m-0 p-4 flex flex-col gap-4">
             {links.map(({ label, href, id }) => (
               <li key={href}>

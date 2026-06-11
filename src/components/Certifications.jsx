@@ -6,35 +6,14 @@ const certs = [
     iconClass: 'bg-[rgba(74,232,154,0.1)] text-accent',
     name: 'HNG Internship — PM Track',
     issuer: 'HNG Tech',
-    year: '2026 · Stage 6 Completion',
-  },
-  {
-    icon: '📋',
-    iconClass: 'bg-[rgba(61,187,255,0.1)] text-accent-blue',
-    name: 'Technical Requirements Documentation',
-    issuer: 'HNG PM Track · Stage 4',
     year: '2026',
   },
   {
     icon: '🔧',
     iconClass: 'bg-[rgba(167,139,250,0.1)] text-accent-purple',
     name: 'Backend Engineering Track',
-    issuer: 'HNG Tech · Stage 6 · 80% Score',
-    year: '2026 · Highest performer',
-  },
-  {
-    icon: '📊',
-    iconClass: 'bg-[rgba(251,184,36,0.1)] text-accent-amber',
-    name: 'Product Prioritisation & Roadmapping',
-    issuer: 'Applied · VendSync Q3 Strategy',
+    issuer: 'HNG Tech',
     year: '2026',
-  },
-  {
-    icon: '🥽',
-    iconClass: 'bg-[rgba(167,139,250,0.1)] text-accent-purple',
-    name: 'MR / XR Product Specification',
-    issuer: 'Applied · VoiceStage MR PRD & Pitch Deck',
-    year: '2026 · HNG Stage 5',
   },
 ]
 
