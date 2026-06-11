@@ -114,7 +114,7 @@ export default function EngineeringProjects() {
         <div className="grid md:grid-cols-2 gap-5">
           {projects.map((project, i) => (
             <FadeIn key={project.num} delay={i * 60}>
-              <div className="bg-bg2 border border-white/8 rounded-card p-6 h-full flex flex-col gap-4 hover:border-white/16 transition-[border-color] duration-300">
+              <div className="bg-bg2 border border-bdr rounded-card p-6 h-full flex flex-col gap-4 hover:border-bdr-hi transition-[border-color] duration-300">
 
                 {/* Header row */}
                 <div className="flex items-start justify-between gap-4">
@@ -146,7 +146,7 @@ export default function EngineeringProjects() {
                 </ul>
 
                 {/* Stack chips */}
-                <div className="flex flex-wrap gap-2 pt-4 border-t border-white/8">
+                <div className="flex flex-wrap gap-2 pt-4 border-t border-bdr">
                   {project.stack.map(tech => (
                     <span key={tech} className="bg-bg3 rounded px-2.5 py-0.5 text-[0.75rem] text-muted">
                       {tech}
