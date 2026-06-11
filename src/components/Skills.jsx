@@ -45,11 +45,11 @@ export default function Skills() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {skillGroups.map(({ title, skills }, i) => (
             <FadeIn key={title} delay={i * 60}>
-              <div className="bg-bg3 border border-white/8 rounded-card p-6 h-full transition-[border-color] duration-300 hover:border-white/16">
+              <div className="bg-bg3 border border-bdr rounded-card p-6 h-full transition-[border-color] duration-300 hover:border-bdr-hi">
                 <div className="text-[0.8rem] font-semibold tracking-[0.08em] uppercase text-accent mb-4">{title}</div>
                 <div className="flex flex-wrap gap-2">
                   {skills.map(skill => (
-                    <span key={skill} className="bg-bg2 border border-white/8 rounded-md px-3 py-1 text-[0.8rem] text-txt transition-[border-color,color] duration-200 hover:border-accent/30 hover:text-accent">
+                    <span key={skill} className="bg-bg2 border border-bdr rounded-md px-3 py-1 text-[0.8rem] text-txt transition-[border-color,color] duration-200 hover:border-accent/30 hover:text-accent">
                       {skill}
                     </span>
                   ))}

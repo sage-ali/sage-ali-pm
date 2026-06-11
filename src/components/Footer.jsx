@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="text-center py-8 border-t border-white/[0.08] text-muted text-[0.8rem]">
+    <footer className="text-center py-8 border-t border-bdr text-muted text-[0.8rem]">
       <div className="max-w-[1100px] mx-auto px-6">
         <p>
           Ali Agboola · Product Manager · Built 2026 ·{' '}

@@ -118,7 +118,7 @@ export default function Experience() {
         </FadeIn>
 
         <div className="relative">
-          <div className="absolute left-0 top-0 bottom-0 w-px bg-white/8" />
+          <div className="absolute left-0 top-0 bottom-0 w-px bg-bdr" />
 
           {/* Technical PM role */}
           <FadeIn className="pl-10 mb-10 relative">
@@ -146,7 +146,7 @@ export default function Experience() {
             <div className="grid md:grid-cols-2 gap-4">
               {engineeringProjects.map((project, i) => (
                 <FadeIn key={project.num} delay={i * 60}>
-                  <div className="bg-bg2 border border-white/8 rounded-card p-5 h-full flex flex-col gap-3 hover:border-white/16 transition-[border-color] duration-300">
+                  <div className="bg-bg2 border border-bdr rounded-card p-5 h-full flex flex-col gap-3 hover:border-bdr-hi transition-[border-color] duration-300">
 
                     <div className="flex items-start justify-between gap-2">
                       <span className="font-display font-extrabold text-[1.4rem] leading-none tracking-[-0.04em] text-accent/40 select-none">
@@ -172,7 +172,7 @@ export default function Experience() {
                       ))}
                     </ul>
 
-                    <div className="flex flex-wrap gap-1.5 pt-3 border-t border-white/8">
+                    <div className="flex flex-wrap gap-1.5 pt-3 border-t border-bdr">
                       {project.stack.map(tech => (
                         <span key={tech} className="bg-bg3 rounded px-2 py-0.5 text-[0.7rem] text-muted">{tech}</span>
                       ))}

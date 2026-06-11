@@ -56,7 +56,7 @@ export default function Contact() {
                 <a
                   href={href}
                   {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                  className="contact-link-hover flex items-center gap-4 bg-bg3 border border-white/8 rounded-[10px] p-4 no-underline text-txt"
+                  className="contact-link-hover flex items-center gap-4 bg-bg3 border border-bdr rounded-[10px] p-4 no-underline text-txt"
                 >
                   <div className="w-9 h-9 rounded-lg bg-[rgba(74,232,154,0.1)] flex items-center justify-center text-base text-accent font-bold shrink-0">
                     {icon}

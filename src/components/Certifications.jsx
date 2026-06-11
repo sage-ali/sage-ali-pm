@@ -35,7 +35,7 @@ export default function Certifications() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {certs.map(({ icon, iconClass, name, issuer, year }, i) => (
             <FadeIn key={name} delay={i * 70}>
-              <div className="bg-bg2 border border-white/8 rounded-card p-5 flex items-start gap-4 transition-[border-color] duration-300 hover:border-white/16">
+              <div className="bg-bg2 border border-bdr rounded-card p-5 flex items-start gap-4 transition-[border-color] duration-300 hover:border-bdr-hi">
                 <div className={`w-10 h-10 rounded-lg flex items-center justify-center text-lg shrink-0 ${iconClass}`}>
                   {icon}
                 </div>

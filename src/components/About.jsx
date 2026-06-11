@@ -13,7 +13,7 @@ export default function About() {
 
           {/* Avatar */}
           <FadeIn>
-            <div className="w-full max-w-[320px] aspect-square bg-bg3 rounded-card border border-white/[0.08] flex items-center justify-center font-display font-extrabold text-[5rem] text-accent tracking-[-0.05em] transition-[border-color,box-shadow] duration-300 hover:border-[rgba(74,232,154,0.3)] hover:shadow-[0_0_40px_rgba(74,232,154,0.06)]">
+            <div className="w-full max-w-[320px] aspect-square bg-bg3 rounded-card border border-bdr flex items-center justify-center font-display font-extrabold text-[5rem] text-accent tracking-[-0.05em] transition-[border-color,box-shadow] duration-300 hover:border-[rgba(74,232,154,0.3)] hover:shadow-[0_0_40px_rgba(74,232,154,0.06)]">
               AA
             </div>
           </FadeIn>
@@ -64,7 +64,7 @@ export default function About() {
                 {tags.map((tag, i) => (
                   <span
                     key={tag}
-                    className="bg-bg3 border border-white/[0.08] rounded-full px-3.5 py-1 text-[0.8rem] text-muted transition-[border-color,color] duration-200 hover:border-accent/40 hover:text-txt"
+                    className="bg-bg3 border border-bdr rounded-full px-3.5 py-1 text-[0.8rem] text-muted transition-[border-color,color] duration-200 hover:border-accent/40 hover:text-txt"
                     style={{ transitionDelay: `${i * 30}ms` }}
                   >
                     {tag}

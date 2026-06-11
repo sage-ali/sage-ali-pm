@@ -13,7 +13,7 @@ function StatCard({ num, display, sup, label, accent, index, active }) {
 
   return (
     <div
-      className={`hero-item bg-bg2 border rounded-card p-5 ${accent ? 'border-[rgba(74,232,154,0.3)]' : 'border-white/[0.08]'}`}
+      className={`hero-item bg-bg2 border rounded-card p-5 ${accent ? 'border-[rgba(74,232,154,0.3)]' : 'border-bdr'}`}
       style={{ animationDelay: `${600 + index * 120}ms` }}
     >
       <div className="font-display font-extrabold text-[2rem] tracking-[-0.03em] text-txt">
@@ -69,7 +69,7 @@ export default function Hero() {
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-medium bg-transparent text-txt border border-white/[0.16] hover:border-accent hover:text-accent transition-colors no-underline"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-medium bg-transparent text-txt border border-bdr-hi hover:border-accent hover:text-accent transition-colors no-underline"
               >
                 Get in touch
               </a>

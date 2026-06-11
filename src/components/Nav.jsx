@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useTheme } from '../hooks/useTheme'
 
 const links = [
   { label: 'About', href: '#about', id: 'about' },
@@ -13,6 +14,7 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [activeId, setActiveId] = useState('')
   const [scrollProgress, setScrollProgress] = useState(0)
+  const { theme, toggle } = useTheme()
 
   useEffect(() => {
     const sectionIds = ['hero', ...links.map(l => l.id)]
@@ -41,7 +43,7 @@ export default function Nav() {
   }, [])
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 h-[60px] flex items-center justify-between px-6 md:px-16 bg-[rgba(14,15,17,0.88)] backdrop-blur-md border-b border-white/8">
+    <nav className="fixed top-0 left-0 right-0 z-50 h-[60px] flex items-center justify-between px-6 md:px-16 bg-(--nav-bg) backdrop-blur-md border-b border-bdr">
       {/* Scroll progress bar */}
       <div
         className="absolute bottom-0 left-0 h-0.5 bg-accent transition-[width] duration-100 ease-out"
@@ -68,6 +70,23 @@ export default function Nav() {
         ))}
       </ul>
 
+      {/* Theme toggle */}
+      <button
+        onClick={toggle}
+        aria-label="Toggle theme"
+        className="w-8 h-8 flex items-center justify-center rounded-lg border border-bdr text-muted hover:text-txt hover:border-bdr-hi transition-colors duration-200 bg-transparent cursor-pointer"
+      >
+        {theme === 'dark' ? (
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        ) : (
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        )}
+      </button>
+
       {/* Mobile hamburger */}
       <button
         className="md:hidden flex flex-col gap-1.5 p-2 text-txt cursor-pointer bg-transparent border-0"
@@ -81,7 +100,7 @@ export default function Nav() {
 
       {/* Mobile dropdown */}
       {menuOpen && (
-        <div className="absolute top-[60px] left-0 right-0 bg-bg2 border-b border-white/8 md:hidden">
+        <div className="absolute top-[60px] left-0 right-0 bg-bg2 border-b border-bdr md:hidden">
           <ul className="list-none m-0 p-4 flex flex-col gap-4">
             {links.map(({ label, href, id }) => (
               <li key={href}>

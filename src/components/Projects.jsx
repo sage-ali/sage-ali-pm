@@ -70,7 +70,7 @@ export default function Projects() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, i) => (
             <FadeIn key={project.title} delay={i * 70} as="a" href="#case-studies"
-              className="project-card-hover bg-bg2 border border-white/8 rounded-card p-7 no-underline text-inherit block"
+              className="project-card-hover bg-bg2 border border-bdr rounded-card p-7 no-underline text-inherit block"
             >
               <span className={`inline-block text-[0.7rem] font-semibold tracking-[0.08em] uppercase px-2.5 py-1 rounded mb-4 ${project.badgeClass}`}>
                 {project.badge}
@@ -81,7 +81,7 @@ export default function Projects() {
               <div className="text-muted text-sm leading-[1.6]">
                 {project.desc}
               </div>
-              <div className="flex flex-wrap gap-2 mt-5 pt-5 border-t border-white/8">
+              <div className="flex flex-wrap gap-2 mt-5 pt-5 border-t border-bdr">
                 {project.chips.map(chip => (
                   <span key={chip} className="bg-bg3 rounded px-2.5 py-0.5 text-[0.75rem] text-muted">
                     {chip}

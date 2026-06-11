@@ -76,7 +76,7 @@ export default function CaseStudies() {
 
         <div className="flex flex-col gap-6">
           {caseStudies.map((cs) => (
-            <div key={cs.title} className="bg-bg2 border border-white/[0.08] rounded-card p-8 md:p-10">
+            <div key={cs.title} className="bg-bg2 border border-bdr rounded-card p-8 md:p-10">
               <div className="flex flex-col md:flex-row justify-between md:items-start gap-4 mb-6">
                 <div>
                   <div className="font-display font-bold text-[1.3rem] tracking-[-0.02em] text-txt">{cs.title}</div>
