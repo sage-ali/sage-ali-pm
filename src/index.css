@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0E0F11;
+  --color-bg2: #16181C;
+  --color-bg3: #1E2128;
+  --color-txt: #F0F0EE;
+  --color-muted: #8A8D96;
+  --color-accent: #4AE89A;
+  --color-accent-blue: #3DBBFF;
+  --color-accent-red: #FF6B6B;
+  --color-accent-purple: #A78BFA;
+  --color-accent-amber: #FBB824;
+
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Syne', sans-serif;
+
+  --radius-card: 12px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-txt);
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
+
+/* ── Hero load animations ── */
+@keyframes hero-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-item {
+  opacity: 0;
+  animation: hero-reveal 0.7s ease forwards;
+}
+
+/* ── Pulsing availability dot ── */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* ── Project card accent glow on hover ── */
+.project-card-hover {
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+}
+.project-card-hover:hover {
+  border-color: rgba(74, 232, 154, 0.35) !important;
+  box-shadow: 0 0 0 1px rgba(74, 232, 154, 0.15), 0 8px 40px rgba(74, 232, 154, 0.07);
+  transform: translateY(-3px);
+}
+
+/* ── Contact link hover ── */
+.contact-link-hover {
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+.contact-link-hover:hover {
+  border-color: rgba(74, 232, 154, 0.4) !important;
+  background-color: rgba(74, 232, 154, 0.04);
+}
